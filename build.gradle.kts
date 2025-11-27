@@ -38,10 +38,15 @@ kotlin {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
+            groupId = "com.github.Beetoxic666"     
+            artifactId = "kotatsu-parsers"         
+            version = "1.0.0"                      
+
             from(components["java"])
         }
     }
 }
+
 
 dependencies {
     implementation(libs.kotlinx.coroutines.core)
